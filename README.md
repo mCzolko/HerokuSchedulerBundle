@@ -47,4 +47,47 @@ class AppKernel extends Kernel
 Setup the Scheduler on Heroku
 ============
 
+Install the addon: https://elements.heroku.com/addons/scheduler
+
+Open it and fill these values:
+
 ![Heroku Scheduler](https://github.com/mCzolko/HerokuSchedulerBundle/blob/master/Resources/doc/scheduler-jobs.png)
+
+That's it. See Events.php file for available events which you can handle inside your app.
+
+
+Usage
+============
+
+Create a event subscriber (or listener) for scheduler events.
+
+
+```php
+class HerokuSchedulerSubscriber implements EventSubscriberInterface
+{
+
+    public static function getSubscribedEvents()
+    {
+        return [
+            Events::TEN_MINUTES => 'tenMinutes',
+            Events::HOURLY      => 'hourly',
+            Events::DAILY       => 'daily'
+        ];
+    }
+
+    public function tenMinutes()
+    {
+        // Check notifications on your Apple watch 
+    }
+
+    public function hourly()
+    {
+        // Send message at least one hot chick on Badoo
+    }
+
+    public function daily()
+    {
+        // https://www.youtube.com/watch?v=lxptFSJJ14Y
+    }
+}
+```
