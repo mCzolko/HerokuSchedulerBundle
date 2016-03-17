@@ -59,10 +59,12 @@ That's it. See Events.php file for available events which you can handle inside 
 Usage
 ============
 
-Create a event subscriber (or listener) for scheduler events.
+Create a event subscriber (or listener) for scheduler events. And do whatever you want. Freedom.
 
 
 ```php
+use mCzolko\HerokuSchedulerBundle\Events;
+
 class HerokuSchedulerSubscriber implements EventSubscriberInterface
 {
 
