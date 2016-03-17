@@ -1,0 +1,19 @@
+{
+    "name": "mczolko/heroku-scheduler-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony HerokuSchedulerBundle",
+    "keywords": ["Heroku Scheduler"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael Czolko",
+            "email": "michael@czolko.cz"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.9",
+    },
+    "autoload": {
+        "psr-4": { "mCzolko\\HerokuSchedulerBundle\\": "" }
+    }
+}
