@@ -43,3 +43,9 @@ class AppKernel extends Kernel
 
     // ...
 }
+
+
+Setup the Scheduler on Heroku
+============
+
+![Heroku Scheduler](https://github.com/mCzolko/HerokuSchedulerBundle/blob/master/Resources/doc/scheduler-jobs.png)
