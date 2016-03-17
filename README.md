@@ -1,5 +1,3 @@
-# HerokuSchedulerBundle
-
 Installation
 ============
 
@@ -43,6 +41,7 @@ class AppKernel extends Kernel
 
     // ...
 }
+```
 
 
 Setup the Scheduler on Heroku
