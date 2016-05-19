@@ -55,6 +55,8 @@ Open it and fill these values:
 
 That's it. See Events.php file for available events which you can handle inside your app.
 
+Note: In Symfony3 console is nolonger in app folder. Use `php bin/console` instead.
+
 
 Usage
 ============
